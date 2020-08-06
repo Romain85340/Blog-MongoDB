@@ -1,0 +1,31 @@
+<div id="connect">       
+    <form class="default" action="/categorie" method="POST">
+        <h1>Cree une catégorie</h1>
+                
+        <label><b>Nom de la categorie d'article a créé</b></label>
+        <input type="text" placeholder="Entrer le titre de la catégorie" name="title" required>
+
+        <input type="submit" id='submit' value='Ajoutez' >
+    </form>
+
+
+
+
+
+    <div class="card-category">
+        <h2>Categorie existante:</h2>
+        <ul class="ul-test">
+            {{#each categorie}}
+            <li class="li-categorie">
+                {{this.title}}
+                <form action="categorie/{{this.id}}/?_method=DELETE" method="POST">
+                    <button class="onedelete" type="submit"><i class="far fa-trash-alt"></i></button>
+                </form>                                      
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+        
+    
+    <a href="/" class="back-index">Afficher les articles</a>
+</div>

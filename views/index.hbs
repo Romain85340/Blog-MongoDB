@@ -1,0 +1,44 @@
+<main>
+    <div class="articles">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="form-row">
+                    <div class="form-group col-md-9">
+                      <input type="text" id="search" class="form-control" placeholder="Search...">
+                    </div>
+                    <div id="results">
+                    </div>
+                </div>
+
+                <a class="AddCategorie" href="/categorie">Ajoutez une categorie d'article</a>
+                <ul class="list-group list-group-flush">
+                    {{#each article}}
+                    <li class="list-group-item">
+                        <h2>{{this.title}}</h2>
+                        <h3>{{this.categorie.title}}</h3>
+                        <p>{{this.content}}</p>
+                        <img src="{{this.cover.path}}" style="max-height: 200px; max-width: 300px;" alt="">
+                        <p class="author">{{this.author}}</p>
+                        <div class="boutton-article">
+                            <a href="{{this.id}}" class="edit"><i class="fas fa-edit"></i></a>
+                            <form action="{{this.id}}/?_method=DELETE" method="POST">                            
+                                <button class="onedelete" type="submit"><i class="far fa-trash-alt"></i></button>
+                            </form>
+                        </div>
+
+                    </li>
+                    {{/each}} 
+                    <div class="boutton">
+                        <a class="AddArticle" href="/article">Ajoutez un article</a>
+                        <form action="/?_method=DELETE" method="POST">
+                            <button class="alldelete" type="submit">Effacer les articles</button>
+                        </form>
+                    </div>   
+                </ul>    
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>

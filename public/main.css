@@ -1,0 +1,258 @@
+body{
+    background: #67BE4B;
+    box-sizing: border-box;
+}
+#connect{
+    width: 600px;
+    margin:0 auto;
+    margin-top: 200px;
+}
+
+#blog {
+    width: 600px;
+    margin:0 auto;
+    margin-top: 200px;
+}
+
+.articles {
+    width:600px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-category {
+    background: white;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    width: 600px;
+    margin-top: 20px;
+}
+
+select.form-control {
+    z-index: 1;
+}
+
+form.default {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+form.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    height: 500px;
+}
+
+#connect h1{
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+ul {
+    position: relative;
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+ul.ul-test {
+    position: relative;
+    width:100%;
+    padding: 30px;
+    border: 1px solid transparent;
+    background: #fff;
+    width: 400px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0), 0 0 0 0 rgba(0, 0, 0, 0.0);
+}
+
+li {
+    position: relative;
+    list-style: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+
+li h2 {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+li h3 {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+li p.author {
+    font-size: 12px;
+}
+.boutton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.boutton-article {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    width: 50px;
+}
+
+a.AddArticle {
+    width: 170px;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: white;
+    color: #53af57;
+    margin: 8px 0;
+    text-align: center;
+    border: none;
+    transition: 1.5s ease;
+}
+
+a.AddArticle:hover {
+    background-color: #53af57;
+    color: white;
+}
+
+a.AddCategorie {
+    width: 170px;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #67BE4B;
+    color: white;
+    margin: 8px 0;
+    text-align: center;
+    border: none;
+    transition: 1.5s ease;
+}
+
+a.AddCategorie:hover {
+    background-color: white;
+    color: #53af57;
+}
+
+a.edit {
+    color: #53af57;
+}
+
+a.back-index {
+    text-decoration: none;
+    font-size: 12px;
+    position: absolute;
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 150px;
+    top: 220px;
+    right: 627px;
+}
+a.AllDelete {
+    width: 400px;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: white;
+    color: #53af57;
+    margin: 8px 0;
+    text-align: center;
+    border: none;
+    transition: 1.5s ease;
+}
+a.AllDelete:hover {
+    background-color: red;
+    color: white;
+}
+
+button.onedelete {
+    background: white;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    color: red;
+    font-size: 16px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+ 
+
+button.onedelete:hover {
+    background: white;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+button.alldelete {
+    position: absolute;
+    background: white;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    transition: 1.5s ease;
+    color: #53af57;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 15px;
+    right: 110px;
+    top: 8px;
+    font-family: serif;
+}
+button.alldelete:hover {
+    background: red;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    color: white;
+    cursor: pointer;
+}
+label.categorie {
+    margin: 15px 0;
+}

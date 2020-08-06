@@ -1,0 +1,20 @@
+<div id="connect">       
+    <form class="default" action="/{{_id}}?_method=PUT" method="POST" enctype="multipart/form-data">
+        <h1>Modifié votre article</h1>
+                
+        <label><b>Titre de l'article</b></label>
+        <input type="text" placeholder="Entrer le titre de l'article" name="title" value="{{this.title}}" required>
+
+        <label><b>Ajouter le contenu de votre article</b></label>
+        <input type="text" placeholder="Ajouter le contenu de l'article" name="content" value="{{this.content}}" required>
+
+        <label><b>Cover</b></label>
+        <input class="form-control" type="file" name="cover">
+
+        <label><b>Auteur de l'article</b></label>
+        <input type="text" placeholder="Entrer votre pseudo" name="author" value="{{this.author}}" required>
+
+        <input type="submit" id='submit' value='Modifiez'>
+    </form>
+    <a href="/" class="back-index">Afficher les articles</a>
+</div>
